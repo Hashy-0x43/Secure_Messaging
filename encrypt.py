@@ -2,9 +2,7 @@ from cryptography.fernet import Fernet
 
 key_file = input("Key File: ")
 encrypted_file = input("New Encrypted File: ")
-message = input("Message: ")
-
-message = message.encode()
+message = input("Message: ").encode()
 
 key_file = open(key_file,"rb")
 key = key_file.read()
