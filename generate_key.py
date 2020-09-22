@@ -6,7 +6,7 @@ from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 
 password_provided = "password" # This password along with the salt will be used to generate a key.
 password = password_provided.encode()
-salt = # Use os.urandom() to generate a salt and paste the exact output here.
+salt = # Use os.urandom() to generate a salt and paste the output here.
 kdf = PBKDF2HMAC(
     algorithm=hashes.SHA256(),
     length=32,
